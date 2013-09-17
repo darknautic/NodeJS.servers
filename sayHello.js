@@ -1,0 +1,1 @@
+console.log("PasteBin-Websocket+nodeJS >> code.inMotion");

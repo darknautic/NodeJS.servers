@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Your Website</title>
+        
+          <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />	  
+	  <!--<link rel="stylesheet" href="/resources/demos/style.css" />	 -->
+	  <link rel="stylesheet" href="style.css" />
+	  
+	  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	  
+        
+        
+	<script type="text/javascript">
+		
+	
+	function readyFn( jQuery ) {
+		// Code to run when the document is ready.
+		$("span#alerting").text("hello");
+		
+	/*	$.ajax({
+		type : "GET",
+		dataType: "json",
+		url: "http://localhost:8787/",
+		data: "",
+		success: function(msg) { $("span#alerting2").text(msg); },
+		error:   function(xml,msg){ $("span#alerting2").text("Error trying to get url"); }
+		});
+		*/
+	
+		
+		}
+	$( document ).ready( readyFn );	
+	
+	/*	
+	$.ajax({type:"POST",
+		url: "http://localhost:8787/",
+		//data:"Companyinfo="+Companyinfo,
+		success: function(msg) { $("span#alerting").text(msg); },
+		error:   function(xml,msg){ $("span#alerting").text("Error trying to get url"); }
+		});
+	*/
+	
+	
+	
+	
+	
+
+/*	
+	$.getJSON('http://localhost:8787/', function(data) {
+		$("span#alerting").text("request...");
+		var items = [];
+		$.each(data, function(key, val) {
+			items.push('<li id="' + key + '">' + val + '</li>');
+			});
+		
+		//$('<ul/>', {'class': 'my-new-list',html: items.join('')}).appendTo('body');		
+		//$("span#alerting").text('<ul/>', {'class': 'my-new-list',html: items.join('')});
+		
+		});
+*/	
+	</script>
+	
+	
+	
+        
+</head>
+
+<body>
+
+<span id='alerting'></span>
+<span id='alerting2'></span>
+
+
+<br>
+        <header>
+                <nav>
+                        <ul>
+                                <li>Your menu</li>
+                        </ul>
+                </nav>
+        </header>
+        
+        <section>        
+                <article>
+                        <header>
+                                <h2>Article title</h2> <p>Posted on <time
+                                datetime="2009-09-04T16:31:24+02:00">September
+                                4th 2009</time> by <a href="#">Writer</a> - <a
+                                href="#comments">6 comments</a></p>
+                        </header> <p>Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis
+                        egestas.</p>
+                </article>
+                
+                <article>
+                        <header>
+                                <h2>Article title</h2> <p>Posted on <time
+                                datetime="2009-09-04T16:31:24+02:00">September
+                                4th 2009</time> by <a href="#">Writer</a> - <a
+                                href="#comments">6 comments</a></p>
+                        </header> <p>Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis
+                        egestas.</p>
+                </article>
+                
+        </section>
+
+        <aside>
+                <h2>About section</h2> <p>Donec eu libero sit amet quam egestas
+                semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                leo.</p>
+        </aside>
+
+        <footer>
+                <p>Copyright 2009 Your name</p>
+        </footer>
+
+</body>
+</html>
